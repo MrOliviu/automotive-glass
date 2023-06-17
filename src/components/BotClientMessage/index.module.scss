@@ -1,0 +1,32 @@
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	flex-direction: row-reverse;
+	gap: 5px;
+}
+
+.icon {
+	width: 30px;
+	min-width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: var(--color-theme);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.9rem;
+}
+
+.message {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	
+	p {
+		font-family: var(--font-primary);
+		font-weight: 300;
+		font-size: 0.9rem;
+	}
+}

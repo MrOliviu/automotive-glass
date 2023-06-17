@@ -1,0 +1,52 @@
+.button {
+  border: none;
+  border-radius: 0;
+  background-color: var(--color-theme);
+  position: relative;
+  font-family: var(--font-roboto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.text {
+  color: white !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+}
+
+.spinner {
+  animation: rotator 1.5s linear infinite;
+}
+
+.path {
+  stroke-dasharray: 180;
+  stroke-dashoffset: 170;
+  transform-origin: center;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke: white;
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 100;
+    transform: rotate(0);
+  }
+  50% {
+    stroke-dashoffset: 170;
+    transform: rotate(270deg);
+  }
+  100% {
+    stroke-dashoffset: 100;
+    transform: rotate(360deg);
+  }
+}

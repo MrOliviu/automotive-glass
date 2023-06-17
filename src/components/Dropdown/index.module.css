@@ -1,0 +1,80 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.dropdown.active .options {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.dropdown.active .select i {
+  transform: rotate(180deg);
+}
+.dropdown .select {
+  width: 100%;
+  height: 40px;
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 0;
+  background-color: white;
+  cursor: pointer;
+}
+.dropdown .select p {
+  font-family: var(--font-roboto);
+  font-weight: 300;
+  color: rgb(65, 65, 65);
+  color: black;
+  font-size: 1rem;
+  padding-right: 5px;
+}
+.dropdown .select i {
+  transition: all 0.15s ease;
+  color: black;
+}
+.dropdown .options {
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  border-top: 0px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  max-height: 240px;
+  overflow: auto;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  transition: all 0.15s ease;
+}
+.dropdown .options ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown .options ul li {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 0rem 1rem;
+  font-family: var(--font-roboto);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.dropdown .options ul li.active {
+  background-color: var(--color-theme);
+  color: white;
+}
+.dropdown .options ul li:last-child {
+  border-bottom: 0;
+}
+.dropdown .options ul li:hover {
+  background-color: var(--color-theme);
+  color: white;
+  cursor: pointer;
+}

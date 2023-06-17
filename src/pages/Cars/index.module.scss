@@ -1,0 +1,403 @@
+.main, .section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 2rem 1rem;
+	position: relative;
+	font-family: var(--font-primary);
+
+	.content {
+		width: 100%;
+		max-width: 1100px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.row {
+		width: 100%;
+		display: flex;
+	}
+}
+
+.main {
+	background-color: var(--color-bg-secondary);
+	.row {
+		flex-direction: column;
+		gap: 30px;
+	}
+	.car {
+		align-items:center;
+		justify-content: center;
+	}
+	.content {
+		gap: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	h1.title {
+		text-transform: uppercase;
+		font-family: var(--font-primary);
+		font-weight: 300;
+		font-size: 1.8rem;
+		color: var(--color-text-primary);
+
+		b {
+			font-family: var(--font-primary);
+			font-weight: 500;
+		}
+	}
+	.info {
+		display: flex;
+		gap: 2rem;
+
+		> div {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+
+		i {
+			color: var(--color-theme);
+		}
+
+		p {
+			font-family: var(--font-primary);
+			font-weight: 100;
+			font-size: 1rem;
+		}
+	}
+	.model-list {
+		.title {
+			text-transform: uppercase;
+			font-family: var(--font-primary);
+			font-weight: 300;
+			font-size: 1.6rem;
+			color: var(--color-text-primary);
+			b {
+				font-family: var(--font-primary);
+				font-weight: 500;
+			}
+		}
+		.list {
+			list-style: disc;
+			padding-left: 1.2rem;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			color: var(--color-theme);
+			font-size: 1.2rem;
+		}
+		.item {
+			margin-bottom: 1rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			p {
+				font-size: 1.2rem;
+				font-weight: 400;
+				color: var(--color-text-primary);
+			}
+			b {
+				font-weight: 300;
+				// text-decoration: underline;
+			}
+			
+		}
+	}
+	.img {
+		width: 450px;
+		height: 200px;
+		float: right;
+		margin-left: 50px;
+
+		&.small {
+			// width: 100%;
+			// max-width: 350px;
+			display: flex;
+			justify-content: center;
+
+			img {
+				max-width: 350px;
+			}
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			max-width: 450px;
+			max-height: 200px;
+		}
+	}
+	.contact {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.contact-inner {
+		display: flex;
+		gap: 10px;
+		float: left;
+	}
+
+	.btn {
+		height: 100%;
+		width: 100%;
+		max-width: 250px;
+
+		input {
+			width: 100%;
+			height: 100%;
+			padding: 0rem 1rem;
+			border-radius: 0;
+			border: 1px solid black;
+			color: var(--color-text-primary);
+			background-color: var(--color-bg-secondary);
+			font-size: 1rem;
+			font-family: var(--font-primary);
+			font-weight: 300;
+			height: 50px;
+		}
+	}
+}
+
+.price {
+	.content {
+		gap: 20px;
+	}
+	h2.title {
+		font-family: var(--font-primary);
+		font-size: 1.6rem;
+		color: var(--color-text-primary);
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+}
+
+.table {
+	width: 100%;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+	padding: 2rem;
+
+	table {
+		border: none;
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	tr {
+		border-top: 1px solid rgba(0,0,0,0.2);
+		display: flex;
+		&:nth-child(1) {
+			border-top: none;
+		}
+	}
+	th {
+		text-align: left;
+		color: var(--color-theme);
+		font-size: 1.2rem;
+		font-family: var(--font-primary);
+		font-weight: 500;
+	}
+	th, td {
+		padding: 0.8rem;
+		width: 100%;
+	}
+	td {
+		font-size: 1.2rem;
+		font-weight: 300;
+		font-family: var(--font-primary);
+	}
+	
+}
+
+.listSection {
+	.content {
+		gap: 20px;
+	}
+	h2.title {
+		font-family: var(--font-primary);
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		list-style: disc;
+		padding-left: 1rem;
+		gap: 10px;
+	}
+	li {
+		color: var(--color-theme);
+	}
+	p {
+		color: var(--color-text-primary);
+		font-size: 1.2rem;
+		font-weight: 300;
+		font-family: var(--font-primary);
+	}
+	h3.info {
+		font-weight: 700;
+		font-size: 1.2rem;
+		font-family: var(--font-primary);
+		color: var(--color-text-primary);
+	}
+}
+
+section.recommend {
+	.content {
+		gap: 20px;
+	}
+	h2.title {
+		padding: 1rem 2rem;
+		color: var(--color-text-secondary);
+		font-size: 1.2rem;
+		background-color: var(--color-theme);
+		font-family: var(--font-primary);
+		font-weight: 500;
+	}
+	.items {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+
+	.item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	
+	.img {
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	p {
+		font-size: 1rem;
+		font-family: var(--font-primary);
+		font-weight: 300;
+		color: var(--color-text-primary);
+	}
+}
+
+@media (max-width: 950px) {
+	.main {
+		.car {
+			width: fit-content;
+		}
+	}
+}
+@media (max-width: 800px) {
+	.main {
+		.title {
+			display: flex;
+			flex-direction: column;
+		}
+		.model-list {
+			.title {
+				display: inline-block;
+				text-align: center;
+			}
+		}
+		.btn {
+			max-width: unset;
+		}
+		.contact-inner {
+			width: 100%;
+		}
+		.img {
+			width: 100%;
+			height: unset;
+			display: flex;
+			justify-content: center;
+			margin-left: 0;
+			margin-bottom: 1rem;
+
+			img {
+				max-width: 450px;
+				max-height: 200px;
+			}
+		}
+	}
+}
+@media (max-width: 850px) {
+	.main {
+		.row {
+			justify-content: center;
+		}
+		.info {
+			justify-content: center;
+		}
+		h1.title {
+			text-align: center;
+		}
+		.content {
+			flex-direction: column;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.table {
+		th,td {
+			font-size: 1rem;
+		}
+	}
+	.main {
+		.contact-inner {
+			flex-direction: column;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.main {
+		h1.title {
+			font-size: 1.4rem;
+		}
+		.info {
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+		}
+		.contact {
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+
+			button {
+				width: 100%;
+			}
+
+			input {
+				height: 50px;
+			}
+		}
+	}
+	section.recommend {
+		h2.title {
+			// font-size: 1rem;
+			padding: 1rem;
+		}
+		.items {
+			grid-template-columns: 1fr;
+		}
+	}
+	.listSection {
+		p {
+			font-size: 1rem;
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.table {
+		padding: 1rem;
+		th,td {
+			font-size: 0.9rem;
+		}
+	}
+}

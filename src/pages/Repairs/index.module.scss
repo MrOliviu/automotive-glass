@@ -1,0 +1,278 @@
+.main, .section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 2rem 1rem;
+	position: relative;
+
+	.content {
+		width: 100%;
+		max-width: 1100px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.row {
+		width: 100%;
+		display: flex;
+	}
+}
+
+.section {
+	&:nth-child(odd) {
+		background-color: var(--color-bg-secondary);
+	}
+}
+
+.main {
+	background-color: var(--color-bg-secondary);
+	display: flex;
+
+	.socials {
+		display: flex;
+		justify-content: center;
+	}
+
+	.content {
+		padding: 1rem 0rem;
+		gap: 2rem;
+	}
+
+	.title {
+		font-family: var(--font-primary);
+		font-size: 1.8rem;
+		font-weight: 300;
+		color: var(--color-bg-dark);
+		text-align: center;
+		width: 100%;
+	}
+
+	.contact-row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact {
+		display: flex;
+		gap: 10px;
+		margin-bottom: 1rem;
+		width: 100%;
+		max-width: 650px;
+	}
+
+	.socials {
+
+	}
+
+	.info {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		.text-title {
+			font-size: 1.6rem;
+			font-weight: 300;
+		}
+		p {
+			font-family: var(--font-primary);
+			font-size: 1.2rem;
+			font-weight: 300;
+		}
+		b {
+			font-weight: 400;
+		}
+	}
+}
+
+.section {
+
+	.title {
+		font-family: var(--font-primary);
+		font-size: 1.8rem;
+		font-weight: 300;
+		color: var(--color-text-primary);
+		width: 100%;
+		text-align: center;
+		padding: 1rem 0rem;
+
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+
+	.content {
+		padding: 1rem 0rem;
+		position: relative;
+		gap: 1.5rem;
+	}
+	
+	.contact {
+		padding-top: 10px;
+		border-top: 1px solid gray;
+		font-size: 0.9rem !important;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		width: 100%;
+		max-width: 600px;
+
+		a {
+			font-weight: 400;
+			color: var(--color-text-primary);
+		}
+		.socials {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		& > p {
+			font-family: var(--font-primary);
+			font-size: 1.2rem;
+			font-weight: 300;
+			color: var(--color-text-primary);
+		}
+	}
+}
+
+.process-list {
+	display: flex;
+	flex-direction: column;
+	list-style: decimal;
+	padding-left: 1rem;
+	gap: 10px;
+
+	li {
+		color: var(--color-theme);
+	}
+	p {
+		color: var(--color-text-primary);
+		font-size: 1.2rem;
+		font-weight: 300;
+		font-family: var(--font-primary);
+	}
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	list-style: disc;
+	padding-left: 1rem;
+	gap: 10px;
+
+	li {
+		color: var(--color-theme);
+	}
+	p {
+		color: var(--color-text-primary);
+		font-size: 1.2rem;
+		font-weight: 300;
+		font-family: var(--font-primary);
+	}
+}
+
+.table {
+	width: 100%;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+	padding: 2rem;
+
+	table {
+		border: none;
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	tr {
+		border-top: 1px solid rgba(0,0,0,0.2);
+		display: flex;
+		&:nth-child(1) {
+			border-top: none;
+		}
+	}
+	th {
+		text-align: left;
+		color: var(--color-theme);
+		font-size: 1.2rem;
+		font-family: var(--font-primary);
+		font-weight: 500;
+	}
+	th, td {
+		padding: 0.8rem;
+		width: 100%;
+	}
+	td {
+		font-size: 1.2rem;
+		font-weight: 300;
+		font-family: var(--font-primary);
+	}
+}
+
+section.recommend {
+	.row {
+		max-width: 850px;
+	}
+	h2.title {
+		padding: 1rem 2rem !important;
+		color: var(--color-text-secondary);
+		font-size: 1.2rem;
+		background-color: var(--color-theme);
+		font-weight: 500;
+		text-align: unset;
+	}
+	.items {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+
+	.item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	
+	.img {
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	p {
+		font-size: 1rem;
+		font-family: var(--font-primary);
+		font-weight: 300;
+		color: var(--color-text-primary);
+	}
+}
+
+@media (max-width: 600px) {
+	.main {
+		.contact {
+			flex-direction: column;
+			max-width: 400px;
+			align-self: center;
+		}
+	}
+	.section {
+		.row {
+			& > p {
+				font-size: 1rem;
+			}
+		}
+	}
+	.list, .process-list {
+		p {
+			font-size: 1rem;
+		}
+	}
+	section.recommend .items {
+		grid-template-columns: 1fr;
+	}
+}
