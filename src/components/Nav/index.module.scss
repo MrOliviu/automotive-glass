@@ -17,11 +17,13 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 0rem;
+	gap: 12px;
 
 	.left {
 		display: flex;
 		align-items: center;
 		gap: 1rem;
+		width: max-content;
 
 		.description {
 			font-family: var(--font-base);
@@ -64,6 +66,7 @@
 			}
 			span, a {
 				color: white;
+				white-space: nowrap;
 			}
 		}
 	}

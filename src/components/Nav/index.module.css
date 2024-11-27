@@ -16,6 +16,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0rem;
+  gap: 12px;
 }
 .content .left {
   display: flex;
@@ -56,6 +57,7 @@
 }
 .content .right .item span, .content .right .item a {
   color: white;
+  white-space: nowrap;
 }
 
 .links {
