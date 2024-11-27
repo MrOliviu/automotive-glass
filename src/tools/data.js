@@ -1,13 +1,13 @@
 export const WebsiteInformation = {
-	phone: "+7 (812) 920-34-28",
-	tel: "tel:+7(812)920-34-28",
+	phone: "+7 (911) 240-88-55",
+	tel: "tel:+7(911)240-88-55",
 	whatsapp: "https://api.whatsapp.com/send?phone=79112408855",
 	vkLink: "",
 	instagramLink: "",
 	telegramLink: "https://t.me/+79112408855",
 	youtubeLink: "",
 	yandexMapLink: "https://yandex.com/maps/2/saint-petersburg/search/%D0%A3%D0%BB%D0%B8%D1%86%D0%B0%20%D0%91%D1%83%D0%B4%D0%B0%D0%BF%D0%B5%D1%88%D1%82%D1%81%D0%BA%D0%B0%D1%8F%2076/?ll=30.394015%2C59.843928&sctx=ZAAAAAgAEAAaKAoSCfFmDd5XtSVAEXmxMEROl0hAEhIJyVht%2Fl%2FfWkARBg39E1xuQ0AiBgABAgMEBSgKOABAkE5IAGoCcnWdAc3MzD2gAQCoAQC9ARryf8XCAQwAAAAAAAAAAAAAAACCAibQo9C70LjRhtCwINCR0YPQtNCw0L%2FQtdGI0YLRgdC60LDRjyA3NooCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=33.230231%2C57.906156&sspn=33.545836%2C9.816086&z=17.57",
-	address: "Улица Будапешская 76",
+	address: "Улица Будапештская 76",
 	workTime: "Ежедневно 10:00 - 21:00",
 	cars: GetCars(),
 	prices: GetPrices()
